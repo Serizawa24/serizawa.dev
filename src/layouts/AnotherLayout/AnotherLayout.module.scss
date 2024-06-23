@@ -1,0 +1,5 @@
+.container {
+  margin-top: calc(var(--default-layout--padding-tb)*2 +  var(--default-layout-nav-height));
+  padding:var(--default-layout--padding-rl) var(--default-layout--padding-rl) var(--default-layout--padding-rl) ;
+  margin-bottom: 50px;
+}

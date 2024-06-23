@@ -1,0 +1,84 @@
+html{
+  position: relative;
+}
+.wrapper {
+ width: 100%;
+}
+.light {
+  position: absolute;
+  bottom: 150px;
+  left: 40px;
+  width: 96px;
+}
+.spin-box{
+  position: fixed ;
+  right: 0;
+  bottom:0;
+  width: 200px;
+  height: 200px;
+}
+.spin-wrapper {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  position: relative;
+}
+.spinIcon {
+  width: 100%;
+  animation: spin 5s linear infinite;
+
+}
+.hire {
+  position: absolute;
+  top: 24.5%;
+  left: 25.5%;
+  background-color: var(--text-black);
+  color:var(--text-white);
+  font-size: 2rem;
+  width: 50%;
+  height:50%;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+  font-weight: 600;
+  transition: all 0.2s linear;
+  &:hover {
+    background-color: var(--text-white);
+    color:var(--text-black)
+  }
+}
+
+
+
+.home-space{
+  height: 90vh;
+}
+
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .spin-box{
+    position: fixed ;
+    top:0;
+    width: 100px;
+    height: 100px;
+    z-index: 20;
+  }
+  .spin-wrapper {
+    width: 100px;
+    height: 100px;
+  }
+  .hire {
+    
+    font-size: 1rem;
+    line-height: 50px;
+  }
+}

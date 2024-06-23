@@ -1,0 +1,28 @@
+.circle-1 {
+  stroke: #d18dbf;
+  stroke-width: 1px;
+  fill:none;
+}
+.circle-2{
+  stroke-width: 6px;
+  fill:var(--text-white);
+}
+.circle-3{
+  stroke-width: 0px;
+  fill:#d18dbf;
+  animation: pulse 2s ease-in-out infinite;
+}
+.svg-icon{
+  transform: rotate(-90deg);
+}
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
